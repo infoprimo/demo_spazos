@@ -1,8 +1,10 @@
 # coding: utf-8
 from os.path import dirname, abspath, isdir
-from os import mkdir
+from os import mkdir, getcwd
 
 DEBUG = 0
+
+_pwd = getcwd()
 
 # es el path absoluto desde el cual éste módulo es cargado
 try:
@@ -23,26 +25,25 @@ datefmt = '%H:%M:%S'
 filemode = 'a'
 
 
+# Informes Salidapazos-nuevo-1-AAAAmmdd.nnnn
+inputPath = ''.join(WorkPath + "/inout/informes/")
 
 # Informes Salidapazos-nuevo-1-AAAAmmdd.nnnn
-# inputPath = WorkPath + "/inout/informes/"
-inputPath = "./inout/informes/"
-iPrefijo = "Salidapazosnuevo-1-202101*"
+iPrefijo = "Salidapazosnuevo-1-2021*"
 
 # sqlite historico informes json creados
 dbName = '.spazos_tck.db'
 tableName = "spazosjson"
 
 # informes de salida `json`
-# directorio, separadores e espcios de indentación.
-# outputPath = WorkPath + "inout/pazos4/"
-outputPath =  ''.join(WorkPath + '/inout/json/')
+outputPath = ''.join(WorkPath + '/inout/json/')
+
+# separadores e indenctación para formateo de los json
 separadores = (',', ': ')
 indenta = 3
 
 # datos pre compilados de clientes y proveedores (openerp)
-datafile = "./erpdata.json"
-
+datafile = "/erpdata.json"
 
 
 class Error(Exception):
@@ -59,7 +60,6 @@ dbSettings = {
     }
 
 
-
 # constantes para salida pazos
 
 AUXILIRES_CUENTAS = ('43', )
@@ -72,7 +72,7 @@ MODODEINGRESO = [
     ('2', 'Banda Magn.')
  ]
  
-# es un híbrido complementario (tipo_tarjeta cardtype ctacte)
+# es un híbrido complementario (tipo_tarjeta ctacte cardtype)
 TTAR_CTYPE_CTA = {
     '000': ('6203', 'VISA'),
     '001': ('6205', 'DINERS FIRSTDAT'),
@@ -283,18 +283,18 @@ TIPOCABEZAL = [
 
 CABEZAL = {
     '1': 'Ticket Venta/Ingreso',
-    '2': 'Pedido            # NO',                      # NO
+    '2': 'Pedido            # NO',
     '3': 'Devolución',
     '4': 'Estado de cuenta',
-    '5': 'Tck. Exento IVA   # NO',                      # NO
+    '5': 'Tck. Exento IVA   # NO',
     '6': 'Canje',
     '7': 'Inventario',
     '8': 'Ticket de Cajera',
-    '9': 'Gift              # NO',                      # NO
+    '9': 'Gift              # NO',
     '10': 'Pago de caja',
     '11': 'Factura',
-    '12': 'No generado (No existe en informe pazos)',   # NO
-    '13': 'No generado (No existe en informe pazos)',   # NO
+    '12': 'No generado      # NO',
+    '13': 'No generado      # NO',
     '14': 'Consulta',
     '15': 'Apertura de Gaveta',
     '16': 'N.Credito Devolucion',
@@ -404,12 +404,13 @@ TIPOLINEA = [
     ('127', u'M.Pago cuenta corriente'             ),    #                              tipo_operación = 1
     ('128', u'M.Pago Devolución envases'           ),    #                              tipo_operación = 2
 
-    ('900', u'Declaracion de cajera'               )     #
+    ('900', u'Declaracion de cajera'               )
  ]
+
 
 def RTIPOLINEA(linea=None):
     if not linea or not isinstance(linea, (str,)):
-        raise Error(u'No es un tipo de línea!')
+        raise Error(u'No es un tipo de línea válido!')
     for tipo, desc in TIPOLINEA:
         if tipo == linea:
             return desc

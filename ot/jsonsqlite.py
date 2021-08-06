@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+verbose = 0
+
 __licence__ = "GNU/GPLv3"
 __author__ = "Marcelo Zunino (InfoPrimo SL) 2015-2017"
 __descrip__ = "Verifica si hay informes Salidapazos sin procesar. Elabora lista de candidatos y eventualmente " \
@@ -8,6 +10,9 @@ __descrip__ = "Verifica si hay informes Salidapazos sin procesar. Elabora lista 
               "que a su vez, tomará en cuenta en la siguiente verificación de informes."
 
 #import ipdb     # TODO: ipdb
+#
+from glob import glob
+from conf import config as cfg
 import sys
 import os.path
 import subprocess
@@ -16,14 +21,10 @@ import sqlite3
 import re
 import simplejson as json
 import datetime
-from glob import glob
-
 import os
 import logging
-from conf import config as cfg
-logger = logging.getLogger(__name__)
 
-verbose = 0
+logger = logging.getLogger(__name__)
 
 
 def end(msg=None, warn=0):
@@ -41,7 +42,6 @@ def end(msg=None, warn=0):
 def run(command):
     output = subprocess.check_output(command, shell=True)
     return output
-
 
 
 class SpazosTckJson(object):

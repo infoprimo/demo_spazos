@@ -1,8 +1,10 @@
 # coding=utf-8
+
+
 from os.path import dirname, abspath, isdir
-from os import mkdir
+from os import mkdir, getcwd
 
-
+_pwd = getcwd()
 
 # path absoluto desde el cual éste módulo es cargado
 try:
@@ -10,6 +12,8 @@ try:
 except:
     # si se carga desde el prompt del intérptrete python
     WorkPath = '/tmp/'
+
+# print("WP :{}  pwd :{}".format(WorkPath, _pwd))
 
 # definiciones para el log
 ldir = ''.join(WorkPath + '/log/')

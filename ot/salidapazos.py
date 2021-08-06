@@ -8,14 +8,13 @@ import sys
 import os
 import logging
 
+__licence__ = "GNU/GPLv3"
+__author__ = "Marcelo Zunino (InfoPrimo SL) 2015-2017"
+
 ns = os.path.basename(__file__).split('.')[0]
 
 logger = logging.getLogger(__name__)
 logging.info("%s" % (ns,))
-
-__licence__ = "GNU/GPLv3"
-__author__  = "Marcelo Zunino (InfoPrimo SL) 2015-2017"
-__doc__     = "Procesa cvs salidapazos, crea objetos ipticket"
 
 needs = (3, 9)
 pvi = sys.version_info.major, sys.version_info.minor
@@ -30,12 +29,14 @@ def parate():
     import ipdb
     return ipdb.set_trace
 
+
 # parate()()
 
-verbose = 0   # 0/1/2
+
+verbose = 0  # 0/1/2
 
 
-def msgout(msg_ = None):
+def msgout(msg_=None):
     """
         Escribe l valor de `_msg` a la slaida estabdar
     """
@@ -63,7 +64,7 @@ def cargar_informe(informe, suf, suc, info_file=None, serializa=0):
     for cabezal in cabs:
 
         if verbose == 1:
-            print("--- comienza {} ".format(cabezal[2],)),
+            print("--- comienza {} ".format(cabezal[2], )),
         if verbose == 2:
             print("\t\tcabezal tipo:{} caja:{} tck:{}  {}/{}".format(cabezal[0], cabezal[1], cabezal[2],
                                                                      cabezal[4][6:8], cabezal[4][4:6])),
@@ -76,7 +77,7 @@ def cargar_informe(informe, suf, suc, info_file=None, serializa=0):
 
         if verbose == 1:
             print("  Instncia IPTicket..."),
-            print("    %s --- ".format(suf,))
+            print("    %s --- ".format(suf, ))
         if verbose == 2:
             print("\t\t{}\n\t\t\t".format(lineas[-1:]))
 
@@ -102,22 +103,22 @@ def serial_spazos(informe, sufijo, sucurs, info_file):
     res = list()
     quedan = len(informe)
     if verbose:
-        print(" Son %s tickets".format(quedan,)),
+        print(" Son %s tickets".format(quedan, )),
     quedan -= 1
     if verbose:
         print("{}".format(quedan + 1))
-    for ticket_pazos in informe:     # parsea tickets
+    for ticket_pazos in informe:  # parsea tickets
         if verbose == 1:
-            print("Ticket: {}   N.Lineas:\t".format(ticket_pazos.cabezal.cab['numeroticket'],)),
+            print("Ticket: {}   N.Lineas:\t".format(ticket_pazos.cabezal.cab['numeroticket'], )),
         # parate()()
         del ticket_pazos.cabezal.cab['id_ticket']
         # TODO: verificar type(ticket_pazos.cabezal.cab) == <type dict>
         s_cabezal = ticket_pazos.cabezal.cab
         s_lineas = dict()
-        for k, v in ticket_pazos.lineas.items():   # parsea líneas
+        for k, v in ticket_pazos.lineas.items():  # parsea líneas
             if verbose == 1:
                 print("%s" % (k,)),
-            lin = dict(tipo = v.llave, descripcion = v.descripcion, tstlinea = v.hhmmss)
+            lin = dict(tipo=v.llave, descripcion=v.descripcion, tstlinea=v.hhmmss)
             try:
                 lin.update(v.datos)
             except Exception as er:
@@ -136,7 +137,7 @@ def serial_spazos(informe, sufijo, sucurs, info_file):
             res.append((s_cabezal, s_lineas))
     if verbose == 2:
         if pvi >= needs:
-            input("Todos desmepaquetados. Serializar informe {}} ...<cualquiera para continuar>".format(sufijo,))
+            input("Todos desmepaquetados. Serializar informe {}} ...<cualquiera para continuar>".format(sufijo, ))
         else:
             raw_input("Todos desmepaquetados. Serializar informe {}} ...<cualquiera para continuar>".format(sufijo, ))
         #  resgister_json_history_db(self, info_name, serializa=False, indentar=False)
@@ -147,7 +148,6 @@ def serial_spazos(informe, sufijo, sucurs, info_file):
 
 
 def mainsp(sufijos=None):
-
     """
     :param sufijos: list: Lista de extenciones `sifijos` de informes disponibles.
 
@@ -185,7 +185,7 @@ def mainsp(sufijos=None):
     stj = SpazosTckJson(sufijos)
     if not stj.Ok:
         return {}
-    stj.refresh_db()    # TODO: eliminar!
+    stj.refresh_db()  # TODO: eliminar!
     infofiles = stj.spazos_candidatos()
 
     if not infofiles:
@@ -194,29 +194,25 @@ def mainsp(sufijos=None):
             msgout(msg)
         logger.warn(msg)
         return {}
-    
+
     for i in infofiles:
         if verbose:
-            print("{}".format(os.path.basename(i),))
+            print("{}".format(os.path.basename(i), ))
 
-        spazos = Salidapazos2Py(i)                              # csv -> py
+        spazos = Salidapazos2Py(i)  # csv -> py
         if not spazos:
             return {}
-    
+
         fecha, sucursal, sufijo = spazos.check()
         informe = spazos.csv2py()
         ip_tickets = cargar_informe(informe, sufijo, sucursal, i, serializa=0)  # py -> libtck
 
-        [ipt.cabezal.zip.update(dict(sucursal = sucursal)) for ipt in ip_tickets]
-    
+        [ipt.cabezal.zip.update(dict(sucursal=sucursal)) for ipt in ip_tickets]
+
         for ipt in ip_tickets:
             ipt.cabezal.sucursal = sucursal
         res.append((sufijo, fecha, sucursal, ip_tickets))
-    
+
     return res
 
-
-if __name__ == '__main__':
-    # ipdb.set_trace()
-    mainsp()
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

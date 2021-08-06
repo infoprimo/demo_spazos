@@ -2,3 +2,59 @@
 23:39:13, INFO salidapazos
 23:40:00, ERROR No existe el directorio de entrada
 23:40:00, ERROR No existe el directorio de salida
+15:04:16, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+15:04:16, INFO salidapazos
+15:04:16, ERROR No existe el directorio de entrada
+15:06:59, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+15:06:59, INFO salidapazos
+15:07:35, ERROR No existe el directorio de entrada
+15:08:31, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+15:08:31, INFO salidapazos
+15:08:34, ERROR No existe el directorio de entrada
+15:09:38, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+15:09:39, INFO salidapazos
+15:10:00, ERROR No existe el directorio de entrada
+15:10:38, ERROR No existe el directorio de entrada
+15:10:48, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+15:10:48, INFO salidapazos
+15:38:08, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+15:38:08, INFO salidapazos
+15:38:20, ERROR No existe el directorio de entrada
+15:42:52, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+15:42:52, INFO salidapazos
+15:42:52, ERROR No existe el directorio de entrada
+15:48:28, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+15:48:28, INFO salidapazos
+15:48:28, ERROR No existe el directorio de entrada
+15:49:05, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+15:49:05, INFO salidapazos
+15:49:10, ERROR No existe el directorio de entrada
+15:49:42, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+15:49:42, INFO salidapazos
+15:50:24, ERROR No existe el directorio de entrada
+16:01:50, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+16:01:50, INFO salidapazos
+16:02:14, ERROR No existe el directorio de entrada
+16:03:52, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+16:03:52, INFO salidapazos
+16:06:43, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+16:06:43, INFO salidapazos
+16:44:37, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+16:44:37, INFO salidapazos
+16:45:40, ERROR Error de Base de Datos: no such table: spazosjson
+16:45:40, ERROR  
+	No hay informes en: 
+	/home/openerp/demo_spazos/ot/inout/informes/.
+16:45:40, ERROR No hay informes salidapazos por procesar en /home/openerp/demo_spazos/ot/inout/informes/
+16:45:40, WARNING  No hay informes sin procesar!
+
+16:45:49, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+16:45:49, INFO salidapazos
+16:45:51, ERROR  
+	No hay informes en: 
+	/home/openerp/demo_spazos/ot/inout/informes/.
+16:45:51, ERROR No hay informes salidapazos por procesar en /home/openerp/demo_spazos/ot/inout/informes/
+16:45:51, WARNING  No hay informes sin procesar!
+
+17:04:06, INFO /home/openerp/demo_spazos/ot/log/lib_ipt
+17:04:06, INFO salidapazos

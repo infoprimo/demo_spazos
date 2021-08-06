@@ -192,4 +192,9 @@ def main():
         jornadas.update({r[1]: r[3]})
     return dict(lote=lote, jornadas=jornadas)
 
+
+if __name__ == '__main__':
+
+    tck = main()
+
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
