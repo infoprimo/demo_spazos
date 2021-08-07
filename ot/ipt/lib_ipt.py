@@ -6,7 +6,10 @@ __licence__ = "GNU/GPLv3"
 __author__ = "Marcelo Zunino (InfoPrimo SL) 2015-2019"
 
 #  debugging
-from inspect import currentframe, getframeinfo
+try:
+    from inspect import currentframe, getframeinfo
+except:
+    pass
 
 import os
 import sys
@@ -600,7 +603,9 @@ class IPLinea(object):
             self.rlinea = 'L#' + '#'.join(linea)  # recrea linea de detalle de salidapazos original (debug)
         try:
             self.id_linea = int(linea[0])                 # N.de línea único
+            self.numerolinea = linea[0]                   # Idem anterior
             self.llave = llave = linea[1]                 # Tipo de línea de ticket
+            self.tipolinea = linea[1]                     # Idem anterior
             self.esta_linea = linea[3:]                   # Datos específicos de línea
             self.hhmmss = hhmmss(linea[2])                # hhmmss (hora minuto segundo)
             self.cabezal_id = tck_id                      # Id del ticket (cabezal de ticket)

@@ -22,8 +22,11 @@ def parate():
         detiene la ejecución y ofrece un prompt similar al del intérprete python
 
     """
-    import ipdb
-    return ipdb.set_trace
+    try:
+        import ipdb
+        return ipdb.set_trace
+    except:
+        pass
 
 
 __licence__ = "GNU/GPLv3"

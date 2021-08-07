@@ -1,10 +1,8 @@
 # coding: utf-8
 from os.path import dirname, abspath, isdir
-from os import mkdir, getcwd
+from os import mkdir
 
 DEBUG = 0
-
-_pwd = getcwd()
 
 # es el path absoluto desde el cual éste módulo es cargado
 try:

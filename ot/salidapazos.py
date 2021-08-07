@@ -22,12 +22,17 @@ pvi = sys.version_info.major, sys.version_info.minor
 
 def parate():
     """
-    Debuging: 
-                Detien la ejecucuíón del script,
-                pasa el control al debug interactivo `ipdb`
+    Debuging:
+             parate()()
+                Detine la ejecucuíón del script, pasa el control
+                debug interactivo `ipdb`.
+                Los comandos de `ipdb` son los mismos que en pdb.
     """
-    import ipdb
-    return ipdb.set_trace
+    try:
+        import ipdb
+        return ipdb.set_trace
+    except:
+        pass
 
 
 # parate()()
