@@ -91,7 +91,7 @@ Demo para biblioteca salidapasos
         
 Estos son algunos de los atributos de ``cabezal``
 
-        ``tck1.cabezal.cantidadarticulos, tck1.cabezal.cantidadlineas, tck1.cabezal.cantidadlineas, tck1.cabezal.codigocaja, tck1.cabezal.codigocajera, tck1.cabezal.descripcion, tck1.cabezal.estado, tck1.cabezal.estadoticket, tck1.cabezal.fecha, tck1.cabezal.numeroticket, tck1.cabezal.sucursal, tck1.cabezal.tipocabezal``
+        ``tck1.cabezal.cantidadarticulos, tck1.cabezal.cantidadlineas, tck1.cabezal.codigocaja, tck1.cabezal.codigocajera, tck1.cabezal.descripcion, tck1.cabezal.estado, tck1.cabezal.estadoticket, tck1.cabezal.fecha, tck1.cabezal.numeroticket, tck1.cabezal.sucursal, tck1.cabezal.tipocabezal``
 
 En particular, uno de los atributos es un diccionarios que contiene todo los datos del cabezal
 
