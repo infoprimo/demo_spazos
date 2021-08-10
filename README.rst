@@ -1,7 +1,10 @@
-Demo para biblioteca salidapasos
---------------------------------
+---------------------------
+Demo para biblioteca Python
+---------------------------
+procesa informes específicos de salida de una aplicaicón específica :/
+----------------------------------------------------------------------
+ 
 
-|
 
 **Requerimentos python**
 
@@ -31,7 +34,7 @@ Demo para biblioteca salidapasos
 
 
         >>> tcks.keys()
-        ['jornadas', 'lote'] (1)
+        ['jornadas', 'lote'] 
         
         
  La llave 'jornadas' da acceso a un diccionario cuyas claves de acceso se corresponden a un jornada de operaciones, allí se podrá acceder a todos los tickets de dicha jornada :
@@ -52,7 +55,8 @@ Demo para biblioteca salidapasos
 
         >>> tcks['jornadas']['2021-07-01']
         [Ticket1,
-         Ticket2, 
+         Ticket2,
+         ... 
          TicketN]
 
           
@@ -119,10 +123,13 @@ Por su parte ``lineas`` es un diccionario de objetos. Cada una de sus llaves de 
         tipocfe': '101'
         tipodocumentoreceptor': '0'
         
-:wq
-                  
-        
-          
-        
+
+----
 
 
+|
+
+
+``Errores, ideas, dudas`` ver_
+
+.. _ver: https://github.com/infoprimo/demo_spazos/issues/new/choose
