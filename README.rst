@@ -148,7 +148,7 @@ Un método especial disponible en lineas de cabezal o de detalle:
 				'C#1#1#292197#10#20210701114623#F#25#1593.04#20#30'
 				
 				>>> lin1.rlinea
-        'L#1#5#114623#101#e-Ticket#B#0685310#0####'				
+                               'L#1#5#114623#101#e-Ticket#B#0685310#0####'				
 
 La demo contiene una función pre definida.::
 
@@ -162,10 +162,11 @@ como se vió más arriba, uno o varios tickets en particular, etc.
 
 ::
 
-	for t in tcks_del_dia:                                         
-      info_csv += ''.join(t.cabezal.rlinea + '\n')               
-      for l in t.lineas:                                         
-          info_csv += ''.join(t.lineas[l].rlinea + '\n')         
+    info_csv = ''
+    for t in tcks_del_dia:                                         
+        info_csv += ''.join(t.cabezal.rlinea + '\n')               
+        for l in t.lineas:                                         
+            info_csv += ''.join(t.lineas[l].rlinea + '\n')         
 	
 
  info_csv contiene una string con un informe compelo Salidapazosnuevo*
