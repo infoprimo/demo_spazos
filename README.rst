@@ -33,7 +33,7 @@ procesa informes específicos de salida de una aplicaicón específica :/
  En el prompt del intérprete python quedará disponible un diccionario `tcks` de dos llaves. Cada una de éstas dará acceso a colecciones de objetos muy similares.
 
 
-        >>> tcks.keys()
+        >>> informes.keys()
         ['jornadas', 'lote'] 
         
         

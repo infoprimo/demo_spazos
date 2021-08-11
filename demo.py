@@ -2,11 +2,13 @@
 
 from ot import salidapazos
 from os.path import basename
+from ot.conf import config as cfg
 import logging
 
 ns = basename(__file__).split('.')[0]
 logger = logging.getLogger(ns)
 
+Error = cfg.Error
 
 def parate():
     """
@@ -25,7 +27,8 @@ def parate():
     try:
         import ipdb
         return ipdb.set_trace
-    except:
+    except Error as err:
+        print(Error.message)
         pass
 
 
@@ -96,7 +99,26 @@ class Res(object):
             if self._ok(key):
                 self.result[key] = float(0.0)
 
-    def _ok(self, kch):
+    @staticmethod
+    def _ok(kch):
+        """
+            Por diseño del lenguaje, Python siempre pasa la instancia de clase a los métodos.
+            El decorador @sataicmethod evita este gasto inutil en aquellos métodos que utilizan
+            la isntancia de clase en su implmentación.
+
+            Un método decorado como `estático` será invocado sin pasar la instancia de la clase
+            como argumento. Incluso sin siquiera haber creado una instancia de clase.
+
+            En este caso el método simplemente verifica que el argumento que recibe esté dentro
+            de un rango específico de la tabla de caracteres del sistema. No necesita ninguno de
+            los métodos o valores contenidos en la instancia. por tanto no la necesita.
+
+            En varios paises, tal vez en la mayoría, el Estado podría tomar este tip, y ahorrar sin
+            ser neoliberal!
+
+        :param kch:
+        :return:
+        """
         for ch in kch:
             if not (65 <= ord(ch) <= 90 or 97 <= ord(ch) <= 122):
                 return False
@@ -196,8 +218,58 @@ def main():
     return dict(lote=lote, jornadas=jornadas)
 
 
+def repazos_csv(dia=None):
+
+    # verificación mínimma del parámetro
+    if not dia or len(dia) != 10:
+        print("\n\tuso: >>> repazos_csv('2021-07-08')\n")
+        return False
+
+    # seleccionar el día requerido
+    tcks_del_dia = informes['lote'][dia]['tickets_pazos']
+
+    # una string para nuestra salida
+    info_csv = ''
+
+
+    """ acá talananá """
+    for t in tcks_del_dia:
+        info_csv += ''.join(t.cabezal.rlinea + '\n')
+        for l in t.lineas:
+            info_csv += ''.join(t.lineas[l].rlinea + '\n')
+
+
+    # cómo la queré?
+    op = raw_imput("\n\t <pantalla> o <a>rchivo p/v?")
+    parate()()
+    if op in ('p', 'P'):
+
+        print("{} \n\t -*-\n".format(info_csv))
+
+    elif op in ('a', 'A'):
+
+        fpath = "/tmp/ip_Salidapazonievo-1-{}.csv".format(dia,)
+        with open(fpath, "w") as f:
+            f.write(info_csv)
+
+    else:
+        return False
+
+    return True
+
+        
 if __name__ == '__main__':
 
-    tck = main()
+    parate()()
+
+    informes = main()
+    
+    print("\n\t Los informes leído están el diccionario «informes»")
+    print("\n\t Hay también una función definida: \n"
+          "\n\t\t uso:  »»» repazos_csv('2021-07-08')")
+    print("\n\t que reconstruir el/los informes leídos, "
+          "\n\t mostralos por pantalla o guardarlo en /tmp/..."
+          "\n\t respetando la misma estructura de los originales\n\n\t\t\t\t-*-\n")
+
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
