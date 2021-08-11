@@ -237,6 +237,7 @@ def repazos_csv(dia=None):
         info_csv += ''.join(t.cabezal.rlinea + '\n')
         for l in t.lineas:
             info_csv += ''.join(t.lineas[l].rlinea + '\n')
+    # ahora `info_csv` contiene un informe compelo Salidapazosnuevo
 
 
     # cómo la queré?
