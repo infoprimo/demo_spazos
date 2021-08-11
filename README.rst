@@ -124,6 +124,19 @@ Por su parte ``lineas`` es un diccionario de objetos. Cada una de sus llaves de 
         tipodocumentoreceptor': '0'
         
 
+Además de estos permitir la `navegación/introspección` de este objeto `informes` la demo contiene una función 
+definida que puede usarse así::
+
+        »»» repazos_csv(dia)
+
+donde `dia` es una string de la forma: *'yyyy-MM-dd'*. La función reconstruye el informe original completo 
+correspondiente a esa fecha o cualquier parte del mismo, sea un cabezal, una línea cualquiera, como se 
+ve más arriba, uno o varios tickets en particular, etc.
+
+En esta demo la función recontruye el informe completo, pudiéndo optar por mostrarlo en pantalla o escribir 
+su contenido en un archivo. Estas facilidades básicamente son de uso en debug. 
+        
+        
 ----
 
 
