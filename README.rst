@@ -30,14 +30,14 @@ procesa informes específicos de salida de una aplicaicón específica :/
 
         ``$ ipython -i demo.py``
         
- En el prompt del intérprete python quedará disponible un diccionario `tcks` de dos llaves. Cada una de éstas dará acceso a colecciones de objetos muy similares.
+En el prompt del intérprete python quedará disponible un diccionario `tcks`, con dos llaves de acceso. Cada una de éstas dará acceso a colecciones de objetos muy similares.
 
 
         >>> informes.keys()
         ['jornadas', 'lote'] 
         
         
- La llave 'jornadas' da acceso a un diccionario cuyas claves de acceso se corresponden a un jornada de operaciones, allí se podrá acceder a todos los tickets de dicha jornada :
+La llave 'jornadas' da acceso a su vez a un diccionario cuyas claves de acceso se corresponden a las jornadas de operaciones, de los informes leídos:
 
         >>> tcks['jornadas'].keys()
         [2021-07-10,
@@ -51,7 +51,7 @@ procesa informes específicos de salida de una aplicaicón específica :/
          2021-07-02,
          2021-07-03]
          
- Los tickts de una jornada pueden ser accedidos así:
+Los tickts de una jornada pueden ser accedidos así:
 
         >>> tcks['jornadas']['2021-07-01']
         [Ticket1,
@@ -60,12 +60,12 @@ procesa informes específicos de salida de una aplicaicón específica :/
          TicketN]
 
           
- Donde "Ticket1", Ticket2, etc diferentes tickets del informe correspondiente al día 2021-07-01.
- Esta es la sintaxis para acceder al primer elemento de la list:
+Donde "Ticket1", Ticket2, etc son los tickets del informe correspondiente al día 2021-07-01.
+Esta es la sintaxis para acceder al primer elemento de la list:
 
         >>> tcks['jornadas']['2021-07-01'][0]
 
- A efectos de simplificar se puede cargar el objeto en una variable:
+A efectos de simplificar se puede cargar el objeto en una variable:
 
         >>> tck1 = tcks['jornadas']['2021-07-01'][0]
         
@@ -124,14 +124,14 @@ Por su parte ``lineas`` es un diccionario de objetos. Cada una de sus llaves de 
         tipodocumentoreceptor': '0'
         
 
-Además de estos permitir la `navegación/introspección` de este objeto `informes` la demo contiene una función 
-definida que puede usarse así::
+Además de permitir la `navegación/introspección` de este objeto `informes` la demo contiene una función 
+pre definida.::
 
         »»» repazos_csv(dia)
 
 donde `dia` es una string de la forma: *'yyyy-MM-dd'*. La función reconstruye el informe original completo 
-correspondiente a esa fecha o cualquier parte del mismo, sea un cabezal, una línea cualquiera, como se 
-ve más arriba, uno o varios tickets en particular, etc.
+correspondiente a esa fecha o cualquier parte del mismo, sea un cabezal, una línea, como se vió más arriba, 
+uno o varios tickets en particular, etc.
 
 En esta demo la función recontruye el informe completo, pudiéndo optar por mostrarlo en pantalla o escribir 
 su contenido en un archivo. Estas facilidades básicamente son de uso en debug. 
