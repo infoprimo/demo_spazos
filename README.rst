@@ -30,7 +30,7 @@ procesa informes específicos de salida de una aplicaicón específica :/
 
         ``$ ipython -i demo.py``
         
- En el prompt del intérprete python quedará disponible un diccionario `tcks` de dos llaves. Cada una de éstas dará acceso a colecciones de objetos muy similares.
+ En el prompt del intérprete python quedará disponible un diccionario `informes` de dos llaves. Cada una de éstas dará acceso a colecciones de objetos muy similares.
 
 
         >>> informes.keys()
