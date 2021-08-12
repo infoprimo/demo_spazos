@@ -5,6 +5,9 @@ from os.path import basename
 from ot.conf import config as cfg
 import logging
 
+__licence__ = "GNU/GPLv3"
+__author__ = "Marcelo Zunino (InfoPrimo SL) 2015-2021"
+
 ns = basename(__file__).split('.')[0]
 logger = logging.getLogger(ns)
 
@@ -12,28 +15,22 @@ Error = cfg.Error
 
 def parate():
     """
-        Debuging: usa el módulo `ipdb` debug paso a paso, etc.
+        Debuging: usa el módulo `ipdb`, debug paso a paso, etc.
 
-            >>> pip install ipdb
-        o
-            >>> apt install python ipdb
+            # pip install ipdb
 
         Uso:
+
             >>> parate()()
 
-        detiene la ejecución y ofrece un prompt similar al del intérprete python
-
+    :return:  Detiene la ejecución y ofrece un prompt pra debug
     """
     try:
         import ipdb
         return ipdb.set_trace
     except Error as err:
-        print(Error.message)
-        pass
+        print("\n\t ERROR: Es posible el módulo `ipdb` no esté instalado\n\t".format(err,))
 
-
-__licence__ = "GNU/GPLv3"
-__author__ = "Marcelo Zunino (InfoPrimo SL) 2015-2021"
 
 
 class Res(object):
@@ -100,18 +97,19 @@ class Res(object):
                 self.result[key] = float(0.0)
 
     @staticmethod
-    def _ok(kch):
+    def ok(kch):
         """
-            Por diseño del lenguaje, Python siempre pasa la instancia de clase a los métodos.
-            El decorador @sataicmethod evita este gasto inutil en aquellos métodos que utilizan
-            la isntancia de clase en su implmentación.
+        tr:dl
+            Por diseño del lenguaje, Python pasa siempre la instancia de clase a los métodos.
+            El decorador @sataicmethod evita este gasto inutil en aquellos métodos que no
+            utilizan la instancia de clase en su implmentación.
 
-            Un método decorado como `estático` será invocado sin pasar la instancia de la clase
-            como argumento. Incluso sin siquiera haber creado una instancia de clase.
+            Este tipo de métodos podrán usarse incluso sin siquiera haber creado una
+            instancia de clase.   contador = Clase.metodo('spam_eggs')
 
-            En este caso el método simplemente verifica que el argumento que recibe esté dentro
-            de un rango específico de la tabla de caracteres del sistema. No necesita ninguno de
-            los métodos o valores contenidos en la instancia. por tanto no la necesita.
+            En el caso, el método `Res` simplemente verifica que el argumento recibido recibe esté
+            dentro de un rango específico de la tabla de caracteres del sistema. No necesita ninguno
+            de los métodos o valores contenidos en la instancia, por tanto no la necesita.
 
             En varios paises, tal vez en la mayoría, el Estado podría tomar este tip, y ahorrar sin
             ser neoliberal!
@@ -218,31 +216,35 @@ def main():
     return dict(lote=lote, jornadas=jornadas)
 
 
-def repazos_csv(dia=None):
+def repazos_csv(jornadas, dia=None):
+    """
+        <br />
+        :param   instancia:  jornadas:  instancia de jornadas leídas en a demo es `informes`
+        :param   str:        dia:       texto (entre comillas) 'yyyyMMdd' fecha del informe de salida
+        :return: bool:       True:      un informe `Salidapazosnuevo` o
+                             False:     nada
+    """
 
-    # verificación mínimma del parámetro
+    # verificación mínimma del parámetro día
     if not dia or len(dia) != 10:
         print("\n\tuso: >>> repazos_csv('2021-07-08')\n")
         return False
 
     # seleccionar el día requerido
-    tcks_del_dia = informes['lote'][dia]['tickets_pazos']
+    tcks_del_dia = jornadas['lote'][dia]['tickets_pazos']
 
     # una string para nuestra salida
     info_csv = ''
 
 
-    """ acá talananá """
+    # `kernel` de la función
     for t in tcks_del_dia:
         info_csv += ''.join(t.cabezal.rlinea + '\n')
         for l in t.lineas:
             info_csv += ''.join(t.lineas[l].rlinea + '\n')
-    # ahora `info_csv` contiene un informe compelo Salidapazosnuevo
 
-
-    # cómo la queré?
-    op = raw_imput("\n\t <pantalla> o <a>rchivo p/v?")
-    parate()()
+    # cómo la queré, Toto?
+    op = raw_input("\n\t <pantalla> o <a>rchivo p/v?")
     if op in ('p', 'P'):
 
         print("{} \n\t -*-\n".format(info_csv))
@@ -261,16 +263,12 @@ def repazos_csv(dia=None):
         
 if __name__ == '__main__':
 
-    parate()()
-
-    informes = main()
-    
-    print("\n\t Los informes leído están el diccionario «informes»")
+    print("\n\t Los informes leídos están el diccionario «informes»")
     print("\n\t Hay también una función definida: \n"
-          "\n\t\t uso:  »»» repazos_csv('2021-07-08')")
+          "\n\t\t uso:  »»» repazos_csv('jornada, 2021-07-08')")
     print("\n\t que reconstruir el/los informes leídos, "
           "\n\t mostralos por pantalla o guardarlo en /tmp/..."
           "\n\t respetando la misma estructura de los originales\n\n\t\t\t\t-*-\n")
-
+    informes = main()
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

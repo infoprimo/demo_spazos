@@ -181,3 +181,8 @@ ip_simpleacc*
 ip_ticket/cta_ticket/estado_cuenta/
 ip_ticket/cta_ticket/report/tar/
 ip_ticket/wizard/ot/conf/config_BAK.py
+ot/inout/json/.spazos_tck.db
+ot/log/*
+estos
+aca
+setup.py
