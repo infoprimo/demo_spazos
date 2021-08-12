@@ -282,21 +282,35 @@ class IPCabezal(object):
                 ejemplo:: `d = { '1': 'Ticket de venta(SM),
                                  '2': 'Ticket de Pedido',
                                  '3': 'Ticket de Devolución' }`
-            este dicionario se define como constante de configuración y será un "miembro de clase"
+            este dicionario se define como constante de configuración y será un "miembro de clase".
+            El diccionario filtra el tipo de lineas de cabezal, y por tanto el tipo de ticket que
+            se procesará.            
+            
 
         Cambios en la Estructura de Datos:
         '''''''''''''''''''''''''''''''''
 
 
-        ::  Todos los nombres de identificadores pasan a minúsculas
+        ::  Todos los nombres de identificadores pasan a minúsculas.
+        
         ::  Cambios en largo de los valores respecto a valores originales:
-                CodigoCaja: se rdefine largo 3, relleno ceros a izquierda.
-                NumeroTicket: se rdefine largo 8, relleno ceros a izquierda.
+                CodigoCaja: se redefine a largo 3, rellena con ceros a izquierda.
+                NumeroTicket: se redefine a largo 8, rellena con ceros a izquierda.
+                
         ::  Agregados a la estructura original de la descripción de una línea de cabezal pazos:
                 `descripcion`   string:   Etiqueta correspondiente a `TipoLinea`
-                `id_ticket`     long:     Valor numérico obtenido de timestamp + caja (3 díg.) + tiket (8 díg.)
-
-
+                `id_ticket`     long:     Valor numérico obtenido del concatenado timestamp, cód de caja 
+                                          y nro. de ticket. Se usa para simplificar el código en el 
+                                          proceso de los informes.
+                  
+                  El valor de `id_ticket` resulta en un identificador único del ticket. Esto puede resultar 
+                  útil, por ejemplo al maniupular datos del informe sin afectar su consistencia, aún antes 
+                  de volcarlos a una db, sin afectar su consistencia. Es fácil adecuar este id para desarrollos 
+                  multisucursal agregando el número de sucursal a `id_ticket`.
+                  
+                  Analogamente se ha extendido ésta característica a la lineas de detalle, añadiendo un atributo 
+                  de línea, `id_linea`.
+                  
 
     """
     dic_cabezal = cfg.TIPOS_LINEAS_CABEZAL
