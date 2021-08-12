@@ -8,12 +8,7 @@
 
 **ip_lib** es un módulo Python, cuyo propósito es facilitar la integración a un ERP o aplicación de gestión, de datos estructurados en informes CSV de cierta complejidad, es **de uso específico** para estos informes. Existe experiencia exitosa del desarrollo de módulos para Oddo/OpenERP actualmente en producción. 
 
-`website demo <https://github.com/infoprimo/demo_spazos>`_.
-
-
-ip_lib es source_
-
-.. _source: https://es.wikipedia.org/wiki/Codigo_abierto
+ip_lib es `open source <https://es.wikipedia.org/wiki/Codigo_abierto>`_.
 
 |
 
@@ -217,12 +212,8 @@ Nota: hay algunos de informes para pruebas en `ot/inout/informes`
 
 ----
 
-
 |
 
+`Errores, ideas, dudas https://github.com/infoprimo/demo_spazos/issues/new/choose`_.
 
-Errores, ideas, dudas ver_
-
-.. _ver: https://github.com/infoprimo/demo_spazos/issues/new/choose
-
-
+`github demo <https://github.com/infoprimo/demo_spazos>`_.
