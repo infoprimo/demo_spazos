@@ -1,0 +1,1179 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 6 0 R /F5 7 0 R /F6 8 0 R 
+  /F7 9 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://es.wikipedia.org/wiki/Codigo_abierto)
+>> /Border [ 0 0 0 ] /Rect [ 102.1529 2526.394 157.1829 2538.394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+6 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Courier-Bold /Encoding /WinAnsiEncoding /Name /F6 /Subtype /Type1 /Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Courier-Oblique /Encoding /WinAnsiEncoding /Name /F7 /Subtype /Type1 /Type /Font
+>>
+endobj
+10 0 obj
+<<
+/Annots [ 5 0 R ] /Contents 17 0 R /MediaBox [ 0 0 623.622 2721.26 ] /Parent 16 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/infoprimo/demo_spazos/issues)
+>> /Border [ 0 0 0 ] /Rect [ 125.5129 2632.394 157.1829 2644.394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/infoprimo/demo_spazos)
+>> /Border [ 0 0 0 ] /Rect [ 104.3829 2614.394 131.6229 2626.394 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/Annots [ 11 0 R 12 0 R ] /Contents 18 0 R /MediaBox [ 0 0 623.622 2721.26 ] /Parent 16 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+14 0 obj
+<<
+/Outlines 19 0 R /PageLabels 20 0 R /PageMode /UseNone /Pages 16 0 R /Type /Catalog
+>>
+endobj
+15 0 obj
+<<
+/Author () /CreationDate (D:20210812170435+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20210812170435+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Demo ip_lib) /Trapped /False
+>>
+endobj
+16 0 obj
+<<
+/Count 2 /Kids [ 10 0 R 13 0 R ] /Type /Pages
+>>
+endobj
+17 0 obj
+<<
+/Length 23332
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 2620.394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 192.4381 0 Td (Demo ip_lib) Tj T* -192.4381 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 2590.394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F3 15 Tf 18 TL 22.78311 0 Td (Procesa informes de salida CSV para una aplicaci\363n de gesti\363n) Tj T* -22.78311 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 2544.394 cm
+q
+BT 1 0 0 1 0 26 Tm .040327 Tw 12 TL /F3 10 Tf 0 0 0 rg (ip_lib) Tj /F1 10 Tf ( es un m\363dulo Python, cuyo prop\363sito es facilitar la integraci\363n a un ERP o aplicaci\363n de gesti\363n, de datos) Tj T* 0 Tw 2.55973 Tw (estructurados en informes CSV de cierta complejidad, es ) Tj /F3 10 Tf (de uso espec\355fico) Tj /F1 10 Tf ( para estos informes. Existe) Tj T* 0 Tw (experiencia exitosa del desarrollo de m\363dulos para Oddo/OpenERP actualmente en producci\363n.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2526.394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (ip_lib es ) Tj 0 0 .501961 rg (open source) Tj 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2520.394 cm
+Q
+q
+1 0 0 1 62.69291 2508.394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ( ) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2508.394 cm
+Q
+q
+1 0 0 1 62.69291 2490.394 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (Requerimientos python) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2421.194 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 497.0362 60 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F4 10 Tf 12 TL (logging) Tj T* (simplejson) Tj T* (sqlite3) Tj T* (ipdb       \(opcional\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 2407.194 cm
+Q
+q
+1 0 0 1 62.69291 2395.194 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ( ) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2395.194 cm
+Q
+q
+1 0 0 1 62.69291 2377.194 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (Instalaci\363n) Tj /F1 10 Tf (:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2359.194 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (En una terminal ejecutar:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2289.994 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 497.0362 60 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 12 12 12 12 re f*
+BT 1 0 0 1 0 38 Tm 12 TL /F4 10 Tf 0 0 0 rg ($ wget https://github.com/infoprimo/demo_spazos/archive/refs/heads/main.zip) Tj T* ($ unzip main.zip) Tj T* ($ ) Tj 0 .501961 0 rg (cd) Tj 0 0 0 rg ( demo_spazos) Tj T* ($ ipython -i demo.py) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 2275.994 cm
+Q
+q
+1 0 0 1 62.69291 2263.994 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ( ) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2263.994 cm
+Q
+q
+1 0 0 1 62.69291 2245.994 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (Lo que viene) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2215.994 cm
+q
+BT 1 0 0 1 0 14 Tm .490954 Tw 12 TL /F1 10 Tf 0 0 0 rg (En el prompt del int\351rprete python ) Tj /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj /F1 10 Tf 0 0 0 rg (, quedar\341 disponible un diccionario ) Tj /F5 10 Tf 0 0 0 rg (informes) Tj /F1 10 Tf 0 0 0 rg ( con dos llaves de acceso a) Tj T* 0 Tw (colecciones de instancias de objetos en \351sta demo.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2209.994 cm
+Q
+q
+1 0 0 1 62.69291 2172.794 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 36 re B*
+Q
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( informes.keys\(\)) Tj T* (['jornadas', 'lote']) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 2172.794 cm
+Q
+q
+1 0 0 1 62.69291 2166.794 cm
+Q
+q
+1 0 0 1 62.69291 2154.794 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ( ) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2154.794 cm
+Q
+q
+1 0 0 1 62.69291 2136.794 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL (La llave 'jornadas') Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2106.794 cm
+q
+BT 1 0 0 1 0 14 Tm .539275 Tw 12 TL /F1 10 Tf 0 0 0 rg (A trav\351s de la llave ) Tj /F4 10 Tf 0 0 0 rg ('jornadas') Tj /F1 10 Tf 0 0 0 rg ( se accede a un diccionario. Las llaves de acceso en \351ste se corresponden a) Tj T* 0 Tw (las jornadas de operaciones de los informes le\355dos.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2088.794 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Vemos los elementos de ) Tj /F4 10 Tf 0 0 0 rg (jornadas) Tj /F1 10 Tf 0 0 0 rg (:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2082.794 cm
+Q
+q
+1 0 0 1 62.69291 1937.594 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 144 re B*
+Q
+q
+BT 1 0 0 1 0 122 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( informes['jornadas'].keys\(\)) Tj T* ([2021-07-10,) Tj T* ( 2021-07-08,) Tj T* ( 2021-07-09,) Tj T* ( 2021-07-04,) Tj T* ( 2021-07-05,) Tj T* ( 2021-07-06,) Tj T* ( 2021-07-07,) Tj T* ( 2021-07-01,) Tj T* ( 2021-07-02,) Tj T* ( 2021-07-03]) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 1937.594 cm
+Q
+q
+1 0 0 1 62.69291 1919.594 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (La colecci\363n de tickets de una jornada espec\355fica:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 1913.594 cm
+Q
+q
+1 0 0 1 62.69291 1840.394 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 72 re B*
+Q
+q
+BT 1 0 0 1 0 50 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( informes['jornadas']['2021-07-01']) Tj T* ([Ticket1,) Tj T* ( Ticket2,) Tj T* ( ...) Tj T* ( TicketN]) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 1840.394 cm
+Q
+q
+1 0 0 1 62.69291 1798.394 cm
+q
+BT 1 0 0 1 0 26 Tm .682889 Tw 12 TL /F1 10 Tf 0 0 0 rg (Donde "Ticket1", Ticket2 etc, son los tickets del informe correspondiente al d\355a 2021-07-01. Esta es la sintaxis) Tj T* 0 Tw .947696 Tw (para acceder al primer elemento de la lista, que es instancia de una clase definida en ) Tj /F5 10 Tf 0 0 0 rg (ip_lib) Tj /F1 10 Tf 0 0 0 rg (, en este ejemplo) Tj T* 0 Tw (corresponde al primer ticket de la jornada.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 1792.394 cm
+Q
+q
+1 0 0 1 62.69291 1767.194 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( informes['jornadas']['2021-07-01'][0]) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 1767.194 cm
+Q
+q
+1 0 0 1 62.69291 1749.194 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Asignando el objeto/instancia a una variable:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 1743.194 cm
+Q
+q
+1 0 0 1 62.69291 1717.994 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 24 re B*
+Q
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( tck1 = informes['jornadas']['2021-07-01'][0]) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 1717.994 cm
+Q
+q
+1 0 0 1 62.69291 1699.994 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (a trav\351s de ) Tj /F5 10 Tf 0 0 0 rg (tck1) Tj /F1 10 Tf 0 0 0 rg ( accedemos a datos y m\351todos disponibles.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 1645.994 cm
+q
+BT 1 0 0 1 0 38 Tm .27979 Tw 12 TL /F1 10 Tf 0 0 0 rg (Los atributos de tck1 ) Tj /F4 10 Tf 0 0 0 rg (cabezal) Tj /F1 10 Tf 0 0 0 rg ( y ) Tj /F4 10 Tf 0 0 0 rg (lineas) Tj /F1 10 Tf 0 0 0 rg ( son a su vez instancias que modelan respectivamente a las lineas de) Tj T* 0 Tw .17566 Tw (cabezal y a las l\355neas de detalle, seg\372n definiciones contenidas en el documento ) Tj /F3 10 Tf (Dise\361o de la salida est\341ndar) Tj T* 0 Tw .699189 Tw (de) Tj /F1 10 Tf ( la aplicaci\363n que genera los informes CSV, Versi\363n: 1.6.79 Los datos que albergan las instancias de \351stos) Tj T* 0 Tw (objetos siguen el nomencl\341tor -lowrecase, de dicha especificaci\363n.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 1627.994 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Acceso al n\372mero de ticket:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 1621.994 cm
+Q
+q
+1 0 0 1 62.69291 1584.794 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 36 re B*
+Q
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( tck1.cabezal.numero_tck) Tj T* (292197) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 1584.794 cm
+Q
+q
+1 0 0 1 62.69291 1566.794 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (La instancia accede directamente a cada uno de los atributos de cabezal o a todos en un \372nico diccionario.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 1560.794 cm
+Q
+q
+1 0 0 1 62.69291 1355.594 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 204 re B*
+Q
+q
+BT 1 0 0 1 0 182 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( tck1.cabezal.zip) Tj T* (cantidadarticulos: '25',) Tj T* (cantidadlineas: '30',) Tj T* (codigocaja: '001',) Tj T* (codigocajera: '10',) Tj T* (date: '20210701',) Tj T* (descripcion: 'Ticket Venta/Ingreso',) Tj T* (estadoticket: 'F',) Tj T* (fecha: '2021-07-01',) Tj T* (numeroticket: '292197',) Tj T* (sucursal: '1',) Tj T* (timestamp_tck: '2021-07-01 11:46:23',) Tj T* (timestampticket: '20210701114623',) Tj T* (tipocabezal: '1',) Tj T* (tipocliente: '20',) Tj T* (totalapagar: '1593.04') Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 1355.594 cm
+Q
+q
+1 0 0 1 62.69291 1325.594 cm
+q
+BT 1 0 0 1 0 14 Tm 1.421906 Tw 12 TL /F1 10 Tf 0 0 0 rg (Por su parte ) Tj /F4 10 Tf 0 0 0 rg (lineas) Tj /F1 10 Tf 0 0 0 rg ( es un diccionario de objetos. Cada una de sus llaves de acceso se corresponde a su) Tj T* 0 Tw (n\372mero de l\355nea de detalle en el ticket:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 1319.594 cm
+Q
+q
+1 0 0 1 62.69291 990.7937 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 322.8 cm
+Q
+q
+1 0 0 1 20 18 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 267.6 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 457.0362 36 re B*
+Q
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( tck1 = informes['jornadas']['2021-07-01'][0]) Tj T* (>) Tj (>) Tj (>) Tj ( lin1 = tck1.lineas[1]) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 20 214.4 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 457.0362 36 re B*
+Q
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( lin1.tipolinea) Tj T* ('5') Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 20 161.2 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 457.0362 36 re B*
+Q
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( lin1.descripcion) Tj T* ('Cabezal de CFE') Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 457.0362 144 re B*
+Q
+q
+BT 1 0 0 1 0 122 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( lin1.datos *) Tj T* (ciudadreceptor': '') Tj T* (descripcioncfe': 'e-Ticket') Tj T* (direccionreceptor': '') Tj T* (documentoreceptor': '') Tj T* (name': '2021070111462300100292197-5-1') Tj T* (nombrereceptor': '') Tj T* (numerocfe': '0685310') Tj T* (seriecfe': 'B') Tj T* (tipocfe': '101') Tj T* (tipodocumentoreceptor': '0') Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 18 cm
+Q
+q
+1 0 0 1 20 0 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (*) Tj ( ) Tj (lin1.datos) Tj ( ) Tj (es) Tj ( ) Tj (an\341logo) Tj ( ) Tj (a) Tj ( ) Tj (tck.cabezal.zip) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 990.7937 cm
+Q
+q
+1 0 0 1 62.69291 972.7937 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Un m\351todo especial disponible en lineas de cabezal o de detalle:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 966.7937 cm
+Q
+q
+1 0 0 1 62.69291 876.3937 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 53.2 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 36 re B*
+Q
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( tck1.cabezal.rlinea) Tj T* (C#1#1#292197#10#20210701114623#F#25#1593.04#20#30) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 36 re B*
+Q
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( lin1.rlinea) Tj T* (L#1#5#114623#101#e-Ticket#B#0685310#0####) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 876.3937 cm
+Q
+q
+1 0 0 1 62.69291 858.3937 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (La llave ) Tj /F5 10 Tf 0 0 0 rg ('lote') Tj /F1 10 Tf 0 0 0 rg ( ofrece un diccionario accesible por fecha, ) Tj /F4 10 Tf 0 0 0 rg ('yyyyDDmm') Tj /F1 10 Tf 0 0 0 rg (, igual al de la llave ) Tj /F4 10 Tf 0 0 0 rg ('jornadas') Tj /F1 10 Tf 0 0 0 rg (:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 852.3937 cm
+Q
+q
+1 0 0 1 62.69291 547.5937 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 159.6 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 144 re B*
+Q
+q
+BT 1 0 0 1 0 122 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( informes['lote']) Tj T* ([2021-07-10,) Tj T* ( 2021-07-08,) Tj T* ( 2021-07-09,) Tj T* ( 2021-07-04,) Tj T* ( 2021-07-05,) Tj T* ( 2021-07-06,) Tj T* ( 2021-07-07,) Tj T* ( 2021-07-01,) Tj T* ( 2021-07-02,) Tj T* ( 2021-07-03]) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 20 106.4 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 36 re B*
+Q
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( informes['lote']['2021-07-10'].keys\(\)) Tj T* (['tickets_pazos', 'sufijo', 'sucursal']) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 20 53.2 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 36 re B*
+Q
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( informes['lote']['2021-07-10']['sufijo']) Tj T* ('2013') Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 477.0362 36 re B*
+Q
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F4 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj ( informes['lote']['2021-07-01']['sucursal']) Tj T* ('1') Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 547.5937 cm
+Q
+q
+1 0 0 1 62.69291 529.5937 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (La demo contiene una funci\363n predefinida:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 496.3937 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 497.0362 24 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F4 10 Tf 12 TL (\273\273\273 repazos_csv\(jornadas, dia\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 476.3937 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (donde ) Tj /F5 10 Tf 0 0 0 rg (dia) Tj /F1 10 Tf 0 0 0 rg ( es una string de la forma ) Tj /F5 10 Tf ('yyyy-MM-dd') Tj /F1 10 Tf ( y ) Tj /F5 10 Tf ('jornadas') Tj /F1 10 Tf ( la instancia del conjunto de informes le\355dos.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 434.3937 cm
+q
+BT 1 0 0 1 0 26 Tm .609081 Tw 12 TL /F1 10 Tf 0 0 0 rg (Haciendo uso de los m\351todos ) Tj /F5 10 Tf 0 0 0 rg (rlinea) Tj /F1 10 Tf 0 0 0 rg (, la funci\363n reconstruye el informe original completo correspondiente a esa) Tj T* 0 Tw .734311 Tw (fecha o cualquier parte del mismo, sea un cabezal, una l\355nea, como se vi\363 m\341s arriba, uno o varios tickets en) Tj T* 0 Tw (particular, etc.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 416.3937 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Extracto de 'repazos_csv':) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 227.1937 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 618 180 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 156 18 12 re f*
+.960784 .960784 .862745 rg
+n 24 156 66 12 re f*
+.960784 .960784 .862745 rg
+n 90 156 6 12 re f*
+.960784 .960784 .862745 rg
+n 96 156 48 12 re f*
+.960784 .960784 .862745 rg
+n 144 156 6 12 re f*
+.960784 .960784 .862745 rg
+n 156 156 18 12 re f*
+.960784 .960784 .862745 rg
+n 174 156 6 12 re f*
+.960784 .960784 .862745 rg
+n 180 156 24 12 re f*
+.960784 .960784 .862745 rg
+n 204 156 12 12 re f*
+.960784 .960784 .862745 rg
+n 30 144 18 12 re f*
+.960784 .960784 .862745 rg
+n 0 132 606 12 re f*
+.960784 .960784 .862745 rg
+n 0 120 462 12 re f*
+.960784 .960784 .862745 rg
+n 0 108 474 12 re f*
+.960784 .960784 .862745 rg
+n 0 96 48 12 re f*
+.960784 .960784 .862745 rg
+n 12 72 84 12 re f*
+.960784 .960784 .862745 rg
+n 102 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 114 72 48 12 re f*
+.960784 .960784 .862745 rg
+n 162 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 168 72 60 12 re f*
+.960784 .960784 .862745 rg
+n 228 72 12 12 re f*
+.960784 .960784 .862745 rg
+n 240 72 18 12 re f*
+.960784 .960784 .862745 rg
+n 258 72 6 12 re f*
+.960784 .960784 .862745 rg
+n 12 48 48 12 re f*
+.960784 .960784 .862745 rg
+n 66 48 6 12 re f*
+.960784 .960784 .862745 rg
+n 78 48 12 12 re f*
+.960784 .960784 .862745 rg
+n 24 36 18 12 re f*
+.960784 .960784 .862745 rg
+n 48 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 36 12 12 re f*
+.960784 .960784 .862745 rg
+n 78 36 90 12 re f*
+.960784 .960784 .862745 rg
+n 168 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 30 24 48 12 re f*
+.960784 .960784 .862745 rg
+n 84 24 12 12 re f*
+.960784 .960784 .862745 rg
+n 102 24 12 12 re f*
+.960784 .960784 .862745 rg
+n 114 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 120 24 24 12 re f*
+.960784 .960784 .862745 rg
+n 144 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 150 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 156 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 162 24 42 12 re f*
+.960784 .960784 .862745 rg
+n 204 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 210 24 36 12 re f*
+.960784 .960784 .862745 rg
+n 252 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 264 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 270 24 12 12 re f*
+.960784 .960784 .862745 rg
+n 282 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 288 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 30 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 54 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 12 12 12 re f*
+.960784 .960784 .862745 rg
+n 84 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 90 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 96 12 36 12 re f*
+.960784 .960784 .862745 rg
+n 132 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 54 0 48 12 re f*
+.960784 .960784 .862745 rg
+n 108 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 126 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 138 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 144 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 168 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 174 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 180 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 186 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 222 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 228 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 234 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 240 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 246 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 288 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 300 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 306 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 318 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 324 0 6 12 re f*
+BT 1 0 0 1 0 158 Tm 12 TL /F6 10 Tf 0 .501961 0 rg (def) Tj /F4 10 Tf 0 0 0 rg ( ) Tj 0 0 1 rg (repazos_csv) Tj 0 0 0 rg (\() Tj 0 0 0 rg (jornadas) Tj 0 0 0 rg (,) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (dia) Tj .4 .4 .4 rg (=) Tj 0 .501961 0 rg (None) Tj 0 0 0 rg (\):) Tj 0 0 0 rg  T* (     ) Tj /F7 10 Tf .729412 .129412 .129412 rg (''') Tj T* (       :param:  jornada: instancia: datos y m\351todos de una jornada de operaciones 'jornadas=informes') Tj T* (       :param:  dia:     text:     fecha de la jornada de la forma 'yyyyMMdd') Tj T* (       :result: text:    bool:     True si se reconstruy\351 el infome, sino False) Tj T* (     ''') Tj /F4 10 Tf 0 0 0 rg  T*  T* (  ) Tj 0 0 0 rg (tickts_jornada) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj 0 0 0 rg (informes) Tj 0 0 0 rg ([) Tj .729412 .129412 .129412 rg ('jornadas') Tj 0 0 0 rg (][) Tj 0 0 0 rg (dia) Tj 0 0 0 rg (]) Tj 0 0 0 rg  T*  T* (  ) Tj 0 0 0 rg (info_csv) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg ('') Tj 0 0 0 rg  T* (    ) Tj /F6 10 Tf 0 .501961 0 rg (for) Tj /F4 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (t) Tj 0 0 0 rg ( ) Tj /F6 10 Tf .666667 .133333 1 rg (in) Tj /F4 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (tickets_jornada) Tj 0 0 0 rg (:) Tj 0 0 0 rg  T* (     ) Tj 0 0 0 rg (info_csv) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+=) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg ('') Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (join) Tj 0 0 0 rg (\() Tj 0 0 0 rg (t) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (cabezal) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (rlinea) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg (') Tj /F6 10 Tf .733333 .4 .133333 rg (\\n) Tj /F4 10 Tf .729412 .129412 .129412 rg (') Tj 0 0 0 rg (\)) Tj 0 0 0 rg  T* (     ) Tj /F6 10 Tf 0 .501961 0 rg (for) Tj /F4 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (l) Tj 0 0 0 rg ( ) Tj /F6 10 Tf .666667 .133333 1 rg (in) Tj /F4 10 Tf 0 0 0 rg ( ) Tj 0 0 0 rg (t) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (lineas) Tj 0 0 0 rg (:) Tj 0 0 0 rg  T* (         ) Tj 0 0 0 rg (info_csv) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+=) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg ('') Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (join) Tj 0 0 0 rg (\() Tj 0 0 0 rg (t) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (lineas) Tj 0 0 0 rg ([) Tj 0 0 0 rg (l) Tj 0 0 0 rg (]) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (rlinea) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (+) Tj 0 0 0 rg ( ) Tj .729412 .129412 .129412 rg (') Tj /F6 10 Tf .733333 .4 .133333 rg (\\n) Tj /F4 10 Tf .729412 .129412 .129412 rg (') Tj 0 0 0 rg (\)) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 207.1937 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F4 10 Tf 0 0 0 rg (info_csv) Tj /F1 10 Tf 0 0 0 rg ( contiene una string con un informe compelo Salidapazosnuevo*) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 177.1937 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .504484 Tw (En esta demo la funci\363n recontruye el informe completo, pudi\351ndo optar por mostrarlo en pantalla o escribir su) Tj T* 0 Tw (contenido en un archivo. Esta facilidad es b\341sicamente de uso en debug.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 147.1937 cm
+q
+BT 1 0 0 1 0 14 Tm 1.225072 Tw 12 TL /F5 10 Tf 0 0 0 rg (ip_lib) Tj /F1 10 Tf 0 0 0 rg ( puede escribir un archivo json con los nombres y valores de los datos informe. Implementa adem\341s el) Tj T* 0 Tw (mantenimiento de una base de datos sqlite de un hist\363rico de informes le\355dos y serializados en archivos json.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 129.1937 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Nota: hay algunos de informes para pruebas en ) Tj /F5 10 Tf 0 0 0 rg (ot/inout/informes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 100.8472 cm
+n 0 14.17323 m 498.2362 14.17323 l S
+Q
+q
+1 0 0 1 62.69291 94.84724 cm
+Q
+q
+1 0 0 1 62.69291 82.84724 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ( ) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 82.84724 cm
+Q
+ 
+endstream
+endobj
+18 0 obj
+<<
+/Length 335
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 2632.394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Ideas, dudas, ) Tj 0 0 .501961 rg (errores) Tj 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 2614.394 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (demo en ) Tj 0 0 .501961 rg (github) Tj 0 0 0 rg (.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+19 0 obj
+<<
+/Count 0 /Type /Outlines
+>>
+endobj
+20 0 obj
+<<
+/Nums [ 0 21 0 R 1 22 0 R ]
+>>
+endobj
+21 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+22 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 23
+0000000000 65535 f 
+0000000073 00000 n 
+0000000167 00000 n 
+0000000274 00000 n 
+0000000393 00000 n 
+0000000505 00000 n 
+0000000701 00000 n 
+0000000806 00000 n 
+0000000921 00000 n 
+0000001031 00000 n 
+0000001144 00000 n 
+0000001366 00000 n 
+0000001566 00000 n 
+0000001759 00000 n 
+0000001989 00000 n 
+0000002095 00000 n 
+0000002364 00000 n 
+0000002432 00000 n 
+0000025817 00000 n 
+0000026203 00000 n 
+0000026250 00000 n 
+0000026300 00000 n 
+0000026334 00000 n 
+trailer
+<<
+/ID 
+[<5fc3d9541c3fea5d447d6a02c393feba><5fc3d9541c3fea5d447d6a02c393feba>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 15 0 R
+/Root 14 0 R
+/Size 23
+>>
+startxref
+26368
+%%EOF

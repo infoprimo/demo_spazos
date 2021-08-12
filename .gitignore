@@ -107,6 +107,7 @@ venv.bak/
 # misc
 balanza/
 dbf2open/
+
 # no estan por tamañor!
 ip_zuni_data/
 ip_zuni_profile/
@@ -143,7 +144,6 @@ ip_zuni_profile/
 *.zip
 *.ttf
 *.csv.bak
-*.pdf
 *.project
 
 /template

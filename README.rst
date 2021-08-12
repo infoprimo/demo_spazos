@@ -183,9 +183,9 @@ Extracto de 'repazos_csv':
 
 .. code:: python
 
- def repazos_csv(informes, dia=None):
+ def repazos_csv(jornadas, dia=None):
       '''
-        :param:  jornada: instancia: datos y métodos de una jornada de operaciones
+        :param:  jornada: instancia: datos y métodos de una jornada de operaciones 'jornadas=informes'
         :param:  dia:     text:     fecha de la jornada de la forma 'yyyyMMdd'
         :result: text:    bool:     True si se reconstruyé el infome, sino False
       '''
@@ -214,6 +214,6 @@ Nota: hay algunos de informes para pruebas en `ot/inout/informes`
 
 |
 
-`Errores, ideas, dudas https://github.com/infoprimo/demo_spazos/issues/new/choose`_.
+Ideas, dudas, `errores <https://github.com/infoprimo/demo_spazos/issues>`_.
 
-`github demo <https://github.com/infoprimo/demo_spazos>`_.
+demo en `github <https://github.com/infoprimo/demo_spazos>`_.
