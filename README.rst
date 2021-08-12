@@ -180,7 +180,7 @@ La demo contiene una función predefinida::
 
         »»» repazos_csv(jornadas, dia)
 
-donde `dia` es una string de la forma *'yyyy-MM-dd'* y `jornadas` la instancia del conjunto de informes leídos.
+donde `dia` es una string de la forma *'yyyy-MM-dd'* y *'jornadas'* la instancia del conjunto de informes leídos.
 
 Haciendo uso de los métodos `rlinea`, la función reconstruye el informe original completo correspondiente a esa fecha o cualquier parte del mismo, sea un cabezal, una línea, como se vió más arriba, uno o varios tickets en particular, etc.
 
@@ -213,6 +213,7 @@ Esta facilidad es básicamente de uso en debug.
 Implementa además el mantenimiento de una base de datos sqlite de un histórico de
 informes leídos y serializados en archivos json.
 
+Nota: hay algunos de informes para pruebas en `ot/inout/informes`
 
 ----
 

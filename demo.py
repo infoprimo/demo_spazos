@@ -99,7 +99,7 @@ class Res(object):
     @staticmethod
     def ok(kch):
         """
-        tr:dl
+        tr:dr
             Por diseño del lenguaje, Python pasa siempre la instancia de clase a los métodos.
             El decorador @sataicmethod evita este gasto inutil en aquellos métodos que no
             utilizan la instancia de clase en su implmentación.
