@@ -303,8 +303,8 @@ class IPCabezal(object):
                                           y nro. de ticket. Se usa para simplificar el código en el 
                                           proceso de los informes.
                   
-                  El valor de `id_ticket` resulta en un identificador único del ticket. Esto puede resultar 
-                  útil, por ejemplo al maniupular datos del informe sin afectar su consistencia, aún antes 
+                  El valor de `id_ticket` es un identificador único del ticket. Esto puede resultar útil, 
+                  por ejemplo al maniupular datos del informe sin afectar su consistencia, aún antes 
                   de volcarlos a una db, sin afectar su consistencia. Es fácil adecuar este id para desarrollos 
                   multisucursal agregando el número de sucursal a `id_ticket`.
                   
