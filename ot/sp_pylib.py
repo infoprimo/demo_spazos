@@ -62,7 +62,6 @@ def cargar_informe(informe, suf, suc, info_file=None, serializa=0):
 
     :return:    el contenido del este informe convertido a objetos python
 
-    import ipdb; ipdb.set_trace()
     """
     cabs = informe.keys()
     res = []
@@ -159,8 +158,8 @@ def mainsp(sufijos=None):
     :return: list:        List de informes procesables
         
 
-        `mainsp`: Ejemplo de uso del script "salidapazos.py"
-        ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+        `mainsp`: Ejemplo de uso del script "sp-pylib.py"
+        '''''''''''''''''''''''''''''''''''''''''''''''''
 
         La clase `SpazosTckJson`, importada del módulo `jsonsqlite`, gestiona una db sqlite para mantenimiento 
         del histórico de informes procesados. Se inicializa con valores por defecto leídos de la configuración::

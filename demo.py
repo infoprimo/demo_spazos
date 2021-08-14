@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from ot import salidapazos
+from ot import sp_pylib
 from os.path import basename
 from ot.conf import config as cfg
 import logging
@@ -33,131 +33,17 @@ def parate():
 
 
 
-class Res(object):
-    """
-
-    Generate diccionary of counters
-    +++++++++++++++++++++++++++++++
-
-    Un diccionario de contadores de propósito general
-    -------------------------------------------------
-
-     `counter` is the dict key in default instance
-     Start value = 0
-     k[ey] is a string from any set of `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
-
-     Res(k) => d[k] = 0
-     Res(k,x,z, ... ) => d[k] = 0, d[x] = 0, d[z] = 0, ...
-
-         >>> zombie = Res()              # instance
-         >>> zombie.add()                # add 1 to default key `counter`
-         >>> zombie.add(9)               # add 9 to `counter`
-         >>> zombie.less(4)              # now substract 4 to `counter`
-         >>> zombie['counter']           # prints 6 - the `counter` actual value
-         >>> zombie.addkey('sheeps')     # define a brand new key `sheeps`
-         >>> zombie.showkeys()           # prints ['counter', 'sheeps' ]
-         >>> zombie.flush()              # will reset instance to defaults
-
-    """
-
-    def __init__(self, *args):
-        self.result = dict()
-        if not args:
-            self.result = dict(counter=float(0.0))
-        else:
-            for key in args:
-                if self._ok(key):
-                    self.result[key] = float(0.0)
-
-    def __setitem__(self, key, value):
-        self.result[key] += value
-
-    def __getitem__(self, key):
-        return self.result[key]
-
-    def add(self, key, value=float(1.0)):
-        """
-        @return:    If no value -> ttl['key'] +=1 otherwise ttl['key'] += value
-        """
-        self.__setitem__(key, value)
-
-    def less(self, key, value=float(1.0)):
-        """
-        @return:    If no value -> ttl['key'] -=1 otherwise ttl['key'] += value
-        """
-        value *= -1
-        self.__setitem__(key, float(value))
-
-    def addkey(self, *args):
-        """
-        @ strings keys no digits
-        """
-        for key in args:
-            if self._ok(key):
-                self.result[key] = float(0.0)
-
-    @staticmethod
-    def ok(kch):
-        """
-        tl:dr
-            Por diseño del lenguaje, Python pasa siempre la instancia de clase a los métodos.
-            El decorador @sataicmethod evita este gasto inutil en aquellos métodos que no
-            utilizan la instancia de clase en su implmentación.
-
-            Este tipo de métodos podrán usarse incluso sin siquiera haber creado una
-            instancia de clase.   contador = Clase.metodo('spam_eggs')
-
-            En el caso, el método `Res` simplemente verifica que el argumento recibido recibe esté
-            dentro de un rango específico de la tabla de caracteres del sistema. No necesita ninguno
-            de los métodos o valores contenidos en la instancia, por tanto no la necesita.
-
-            En varios paises, tal vez en la mayoría, el Estado podría tomar este tip, y ahorrar sin
-            ser neoliberal!
-
-        :param kch:
-        :return:
-        """
-        for ch in kch:
-            if not (65 <= ord(ch) <= 90 or 97 <= ord(ch) <= 122):
-                return False
-        return True
-
-    def ret(self, key):
-        """
-        @return:    ttl.res['key'] -> value
-        """
-        self.__getitem__(key)
-
-    def showkeys(self):
-        """
-        @return:    ttl.showkeys() -> all availables keys
-        """
-        return self.result.keys()
-
-    def show(self):
-        """
-        @return:    all keys, values pairs
-        """
-        return self.result
-
-    def flush(self):
-        for i in self:
-            del i
-        self.result = dict()
-        self.result = dict(counter=float(0.0))
-
-
 def main():
     """
-        Una demo decuso de la biblioteca `salidapazos`
-        ''''''''''''''''''''''''''''''''''''''''''''''
+        Una demo del módulo `sp-pylib`
+        ''''''''''''''''''''''''''''''
 
         Retorna una diccionario cuyos miembros serán, a su vez, sendos diccionarios
             >>>
             >>> lote = {}
             >>> jornadas = {}
             >>> parate()()
-            >>> info = salidapazos.mainsp()
+            >>> info = sp-pylib.mainsp()
             >>> for r in info:
             >>>     lote.update({r[1]: dict(suf=r[0], suc=r[2], ptcks=r[3])})
             >>>     jornadas.update({r[1]: r[3]})
@@ -195,7 +81,7 @@ def main():
                 `fecha`         : dd-MM-aaaa : fecha del informe
                 `tickets_pazos` : lista de instancias de cada ticket pazos
 
-        La biblioteca “salidapazos” también puede:
+        El módulo “sp_pylib” también puede:
 
             - serializar a un archivo json,
             - mantener un histórico de informes procesados.
@@ -209,7 +95,7 @@ def main():
     lote = {}
     jornadas = {}
 
-    info = salidapazos.mainsp()
+    info = sp-pylib.mainsp()
     for r in info:
         lote.update({r[1]: dict(sufijo=r[0], sucursal=r[2], tickets_pazos=r[3])})
         jornadas.update({r[1]: r[3]})
@@ -218,7 +104,7 @@ def main():
 
 def repazos_csv(jornadas, dia=None):
     """
-        <br />
+
         :param   instancia:  jornadas:  instancia de jornadas leídas en a demo es `informes`
         :param   str:        dia:       texto (entre comillas) 'yyyyMMdd' fecha del informe de salida
         :return: bool:       True:      un informe `Salidapazosnuevo` o

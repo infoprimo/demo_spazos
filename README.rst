@@ -1,14 +1,19 @@
--------------
-*Demo ip_lib*
--------------
-`Procesa informes de salida CSV para una aplicación de gestión`
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+﻿-------------------
+*Demo sp-pylib*
+-------------------
+`Proceso de informes de salida CSV para una aplicación de gestión`
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+|
 
+El módulo interpreta la salida en formato CSV, de cierta complejidad, de una aplicación Punto de Venta (POS).
 
+``sp-pylib`` serializa esta información en archivos json, (eventualmente xml, yaml, etc), y mantiene un histórico de informes leídos en una base de datos sqlite.
 
-**ip_lib** es un módulo Python, cuyo propósito es facilitar la integración a un ERP o aplicación de gestión, de datos estructurados en informes CSV de cierta complejidad, es **de uso específico** para estos informes. Existe experiencia exitosa del desarrollo de módulos para Oddo/OpenERP actualmente en producción. 
+A la vez ``sp-pylib`` es también un bind python consistente y documentado para desarrollos de aplicaciones de gestión o ERP basados en python, o diversos usos como elaboración de reportes, etc. El diseño de objetos ``sp-pylib`` respeta la estructura y el nomenclator de la especificación antedicha. La demo se centra en las características de estos objetos. 
 
-ip_lib es `open source <https://es.wikipedia.org/wiki/Codigo_abierto>`_.
+Existe experiencia en el desarrollo de módulos para Oddo/OpenERP que se encuentran en producción desde 2015.
+
+sp-pylib es `open source <https://es.wikipedia.org/wiki/Codigo_abierto>`_.
 
 |
 
@@ -36,7 +41,7 @@ En una terminal ejecutar:
 
 |
 
-**Lo que viene**
+**Lo que viene pronto**
 
 En el prompt del intérprete python ``>>>``, quedará disponible un diccionario `informes` con dos llaves de acceso a colecciones de instancias de objetos en ésta demo.
 
@@ -74,7 +79,7 @@ La colección de tickets de una jornada específica:
          TicketN]
 
 
-Donde "Ticket1", Ticket2 etc, son los tickets del informe correspondiente al día 2021-07-01. Esta es la sintaxis para acceder al primer elemento de la lista, que es instancia de una clase definida en `ip_lib`, en este ejemplo corresponde al primer ticket de la jornada.
+Donde "Ticket1", Ticket2 etc, son los tickets del informe correspondiente al día 2021-07-01. Esta es la sintaxis para acceder al primer elemento de la lista, que es instancia de una clase definida en ``sp-pylib``, en este ejemplo corresponde al primer ticket de la jornada.
 
         >>> informes['jornadas']['2021-07-01'][0]
 
@@ -123,7 +128,7 @@ Por su parte ``lineas`` es un diccionario de objetos. Cada una de sus llaves de 
         >>> lin1.descripcion
         'Cabezal de CFE'
 
-        >>> lin1.datos *
+        >>> lin1.datos 
         ciudadreceptor': ''
         descripcioncfe': 'e-Ticket'
         direccionreceptor': ''
@@ -136,19 +141,20 @@ Por su parte ``lineas`` es un diccionario de objetos. Cada una de sus llaves de 
         tipodocumentoreceptor': '0'
 
 
- ``* lin1.datos es análogo a tck.cabezal.zip``
+ `` lin1.datos es análogo a tck.cabezal.zip``
 
 Un método especial disponible en lineas de cabezal o de detalle:
 
-         >>> tck1.cabezal.rlinea
-         C#1#1#292197#10#20210701114623#F#25#1593.04#20#30
+        >>> tck1.cabezal.rlinea
+        C#1#1#292197#10#20210701114623#F#25#1593.04#20#30
 
-         >>> lin1.rlinea
-         L#1#5#114623#101#e-Ticket#B#0685310#0#### 
+        >>> lin1.rlinea
+        L#1#5#114623#101#e-Ticket#B#0685310#0#### 
 
 
 
 La llave `'lote'` ofrece un diccionario accesible por fecha, ``'yyyyDDmm'``, igual al de la llave ``'jornadas'``:
+
 
         >>> informes['lote']
         [2021-07-10,
@@ -175,19 +181,24 @@ La demo contiene una función predefinida::
 
         »»» repazos_csv(jornadas, dia)
 
-donde `dia` es una string de la forma *'yyyy-MM-dd'* y *'jornadas'* la instancia del conjunto de informes leídos.
+donde `dia` es una string de la forma *'yyyy-MM-dd'* y `jornadas` la instancia del conjunto de informes leídos.
 
-Haciendo uso de los métodos `rlinea`, la función reconstruye el informe original completo correspondiente a esa fecha o cualquier parte del mismo, sea un cabezal, una línea, como se vió más arriba, uno o varios tickets en particular, etc.
+Haciendo uso de los métodos `rlinea`, la función reconstruye el informe original completo correspondiente a esa fecha o cualquier parte del mismo, sea un cabezal, una línea, como se vió más arriba, o uno o varios tickets en particular, etc.
 
 Extracto de 'repazos_csv':
 
 .. code:: python
 
  def repazos_csv(jornadas, dia=None):
+ 
       '''
-        :param:  jornada: instancia: datos y métodos de una jornada de operaciones 'jornadas=informes'
-        :param:  dia:     text:     fecha de la jornada de la forma 'yyyyMMdd'
-        :result: text:    bool:     True si se reconstruyé el infome, sino False
+        :param:  jornada: instancia: datos y métodos de una jornada de operaciones
+                                     p.ejem. la instancia ``informes`` de esta demo
+                                     'jornadas=informes'
+
+        :param:  dia:     text:      fecha de la jornada de la forma 'yyyyMMdd'
+       
+        :result: text:    bool:      True si se reconstruye el infome, sino False
       '''
 
    tickts_jornada = informes['jornadas'][dia]
@@ -199,14 +210,10 @@ Extracto de 'repazos_csv':
           info_csv += ''.join(t.lineas[l].rlinea + '\n')         
 
 
-``info_csv`` contiene una string con un informe compelo Salidapazosnuevo*
+``info_csv`` contiene una string con un informe compelo Salidapazosnuevo
 
 En esta demo la función recontruye el informe completo, pudiéndo optar por mostrarlo en pantalla o escribir su contenido en un archivo.
-Esta facilidad es básicamente de uso en debug.
-
-`ip_lib` puede escribir un archivo json con los nombres y valores de los datos informe.
-Implementa además el mantenimiento de una base de datos sqlite de un histórico de
-informes leídos y serializados en archivos json.
+El método es básicamente de uso en debug. Las opciones de filtrado de cabezales y/o líneas, configurable en `ot/conf/config.py`, inciden en las diferencias que resulten con el el CSV original.
 
 Nota: hay algunos de informes para pruebas en `ot/inout/informes`
 
