@@ -6,7 +6,7 @@
 
 |
 
-El módulo interpreta la salida en formato CSV, de cierta complejidad, de una aplicación Punto de Venta (POS).
+El módulo interpreta una salida en formato CSV, de cierta complejidad, de una aplicación Punto de Venta (POS).
 
 ``sp-pylib`` serializa esta información en archivos json, (eventualmente xml, yaml, etc), y mantiene un histórico de informes leídos en una base de datos sqlite.
 
