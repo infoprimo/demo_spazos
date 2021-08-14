@@ -1,8 +1,9 @@
-﻿-------------------
+---------------
 *Demo sp-pylib*
--------------------
+---------------
 `Proceso de informes de salida CSV para una aplicación de gestión`
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
 |
 
 El módulo interpreta la salida en formato CSV, de cierta complejidad, de una aplicación Punto de Venta (POS).
