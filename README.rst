@@ -44,7 +44,7 @@ En una terminal ejecutar:
 
 **Lo que viene pronto**
 
-En el prompt del intérprete python ``>>>``, quedará disponible un diccionario `informes` con dos llaves de acceso a colecciones de instancias de objetos en ésta demo.
+En el prompt del intérprete python ``>>>``, quedará disponible un diccionario ``informes`` con dos llaves de acceso a colecciones de instancias de objetos en ésta demo.
 
 
         >>> informes.keys()
